@@ -73,13 +73,13 @@ def detect_gesture(fingers_state):
 
     if fingers_state == [1, 1, 1, 1, 1]: return "Halo"
     if fingers_state == [0, 1, 1, 1, 1]: return "Britania"
-    if fingers_state == [0, 0, 1, 1, 1]: return "Binti"
+    if fingers_state == [0, 0, 1, 1, 1]: return "...."
     if fingers_state == [0, 1, 1, 1, 0]: return "Annisuy"
     if fingers_state == [0, 1, 1, 0, 0]: return "dan teman saya"
-    if fingers_state == [1, 1, 0, 0, 0]: return "Leakk"
+    if fingers_state == [1, 1, 0, 0, 0]: return "...."
     if fingers_state == [0, 1, 0, 0, 0]: return "nama saya"
     if fingers_state == [0, 1, 0, 0, 1]: return "Terimakasih"
-    if fingers_state == [1, 0, 0, 0, 1]: return "Yazedd"
+    if fingers_state == [1, 0, 0, 0, 1]: return "...."
     if fingers_state == [0, 0, 0, 0, 0]: return "Ilham"
 
     return None
@@ -99,10 +99,10 @@ gesture_colors = {
     "Terimakasih": (255, 0, 255),      # Ungu
     "dan teman saya": (255, 255, 0),   # Cyan
     "Annisuy": (203, 192, 255),        # Pink
-    "Leakk": (0, 255, 255),            # Kuning
-    "Yazedd": (0, 0, 255),             # Merah
+    "....": (0, 255, 255),            # Kuning
+    "....": (0, 0, 255),             # Merah
     "Britania": (255, 255, 255),       # Putih
-    "Binti": (128, 0, 128)             # Merah Marun
+    "....": (128, 0, 128)             # Merah Marun
 }
 
 with mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7) as hands:
