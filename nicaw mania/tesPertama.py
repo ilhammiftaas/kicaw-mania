@@ -72,7 +72,7 @@ def detect_gesture(fingers_state):
     # 1 = Berdiri/Terbuka, 0 = Ditekuk/Tertutup
 
     if fingers_state == [1, 1, 1, 1, 1]: return "Halo"
-    if fingers_state == [0, 1, 1, 1, 1]: return "Britania"
+    if fingers_state == [0, 1, 1, 1, 1]: return "Tanintut"
     if fingers_state == [0, 0, 1, 1, 1]: return "...."
     if fingers_state == [0, 1, 1, 1, 0]: return "Annisuy"
     if fingers_state == [0, 1, 1, 0, 0]: return "dan teman saya"
@@ -101,7 +101,7 @@ gesture_colors = {
     "Annisuy": (203, 192, 255),        # Pink
     "....": (0, 255, 255),            # Kuning
     "....": (0, 0, 255),             # Merah
-    "Britania": (255, 255, 255),       # Putih
+    "Tanintut": (255, 255, 255),       # Putih
     "....": (128, 0, 128)             # Merah Marun
 }
 
